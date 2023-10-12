@@ -6,13 +6,11 @@ import {
   TemplateProps,
   TemplateRenderProps,
 } from "@yext/pages";
-import Appointment from "../components/Appointment";
 import FinProAbout from "../components/FinProAbout";
 import FinProHeader from "../components/FinProHeader";
 import FinProHero from "../components/FinProHero";
 import FinProNav from "../components/FinProNav";
 import MainLayout from "../components/MainLayout";
-import StaticMap from "../components/StaticMap";
 import "../index.css";
 
 export const config: TemplateConfig = {
@@ -26,7 +24,7 @@ export const config: TemplateConfig = {
       "name",
       "c_jobTitle",
       "address",
-      "headshot?",
+      "headshot",
       "description",
       "slug",
     ],
@@ -63,7 +61,7 @@ export default function Blog({ document }: TemplateProps) {
             postalCode: `${document.address.postalCode}`,
           }}
           phone={`${document.mainPhone}`}
-          headshotUrl={`${document.headshot?.url}`}
+          headshotUrl={`${document.headshot.url}`}
         />
         <FinProNav />
         <FinProAbout
