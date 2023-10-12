@@ -99,7 +99,7 @@ const BlogSection = ({ blogs }: BlogSectionProps) => {
                 </div> */}
               <div className="group relative">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href={testBlogs[0].slug}>
+                  <a href={`/${testBlogs[0].slug}`}>
                     <span className="absolute inset-0" />
                     {testBlogs[0].name}
                   </a>
@@ -139,7 +139,7 @@ const BlogSection = ({ blogs }: BlogSectionProps) => {
                 </div> */}
               <div className="group relative">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href={testBlogs[1].slug}>
+                  <a href={`/${testBlogs[1].slug}`}>
                     <span className="absolute inset-0" />
                     {testBlogs[1].name}
                   </a>
@@ -179,7 +179,7 @@ const BlogSection = ({ blogs }: BlogSectionProps) => {
                 </div> */}
               <div className="group relative">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href={testBlogs[2].slug}>
+                  <a href={`/${testBlogs[2].slug}`}>
                     <span className="absolute inset-0" />
                     {testBlogs[2].name}
                   </a>
