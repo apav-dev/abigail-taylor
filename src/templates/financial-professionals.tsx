@@ -37,7 +37,7 @@ export const config: TemplateConfig = {
       "c_featuredBlogs.c_author",
       "c_featuredBlogs.c_shortDescription",
     ],
-    filter: { savedFilterIds: ["1344032459"] },
+    filter: { entityIds: ["FP-0913"] },
   },
 };
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
