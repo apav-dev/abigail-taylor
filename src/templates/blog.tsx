@@ -27,7 +27,7 @@ export const getPath: GetPath<TemplateProps> = ({
 
 export default function Blog({ document }: TemplateProps) {
   return (
-    <MainLayout backgroundColor="#fafafa">
+    <MainLayout backgroundColor="#ffffff">
       <FinProHeader />
       <BlogContent
         authorName={`${document.c_author}`}
