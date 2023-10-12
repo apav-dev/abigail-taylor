@@ -12,6 +12,7 @@ import FinProHero from "../components/FinProHero";
 import FinProNav from "../components/FinProNav";
 import MainLayout from "../components/MainLayout";
 import "../index.css";
+import BlogSection from "../components/BlogSection";
 
 export const config: TemplateConfig = {
   stream: {
@@ -27,8 +28,14 @@ export const config: TemplateConfig = {
       "headshot",
       "description",
       "slug",
+      "c_featuredBlogs.name",
+      "c_featuredBlogs.slug",
+      "c_featuredBlogs.c_coverPhoto",
+      "c_featuredBlogs.c_publishDate",
+      "c_featuredBlogs.c_shortDescription",
+      "c_featuredBlogs.c_author",
     ],
-    filter: { savedFilterIds: ["1344032459"] },
+    filter: { entityIds: ["FP-0913"] },
   },
 };
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
@@ -68,6 +75,7 @@ export default function Blog({ document }: TemplateProps) {
           name={`${document.name}`}
           description={`${document.description}`}
         />
+        <BlogSection blogs={document.c_featuredBlogs} />
       </MainLayout>
     </>
   );
